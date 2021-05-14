@@ -6,17 +6,23 @@ import Netflix from './Netflix';
 // favOttPlatform Component
 const favOttP = 'netflix';
 
-const FavP = ()=>{
+// first way
+// const FavP = ()=>{
 
-    if(favOttP === 'netflix'){
-        return <Netflix />;
+//     if(favOttP === 'netflix'){
+//         return <Netflix />;
        
-        }else{
-            return<Amazon />;
+//         }else{
+//             return<Amazon />;
     
-    }
+//     }
 
-}
+// }
+
+
+
+
+
 
 
 
@@ -24,7 +30,10 @@ const FavP = ()=>{
 const App = () => (
 <>
     <h1 className="">List Of Top 5 </h1>
-    <FavP />
+{ /*<FavP /> */}
+
+{/*second way ternary Operator*/}
+ {favOttP === "netflix" ? <Netflix /> : <Amazon />}
 </>
     );
 export default App;
